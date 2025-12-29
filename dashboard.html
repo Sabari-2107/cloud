@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js"></script>
+  <script src="firebase.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+    <h3>Upload File</h3>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+    <h3>Add Monthly Sale</h3>
+    <input id="month" placeholder="Month">
+    <input id="amount" type="number" placeholder="Amount">
+    <button onclick="addSale()">Add Sale</button>
+    <h3>Sales Data</h3>
+    <div id="salesList"></div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
